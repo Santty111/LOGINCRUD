@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — AdminExpress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <main class="login-container">
+      <section class="brand-section" aria-hidden="true">
+        <h1 class="brand-section__title">AdminExpres</h1>
+      </section>
+  
+      <section class="form-section">
+        <div class="form-section__inner">
+          <header class="form-header">
+            <h2 class="form-header__title">
+              Let's <span class="form-header__accent">Sign In</span> 👋
+            </h2>
+            <p class="form-header__subtitle">
+              Hey, Enter your details to get<br />sign in to your account.
+            </p>
+          </header>
+  
+          <form class="login-form" action="#" method="post" novalidate>
+            <div class="field">
+              <label class="field__label" for="email">Email</label>
+              <div class="field__control field__control--icon-left">
+                <i class="fa-solid fa-envelope field__icon field__icon--start" aria-hidden="true"></i>
+                <input
+                  class="field__input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="Enter Email"
+                  required
+                />
+              </div>
+            </div>
+  
+            <div class="field">
+              <label class="field__label" for="password">Password</label>
+              <div class="field__control field__control--icon-both">
+                <i class="fa-solid fa-lock field__icon field__icon--start" aria-hidden="true"></i>
+                <input
+                  class="field__input"
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Enter Password"
+                  required
+                />
+                <button
+                  class="field__icon-btn"
+                  type="button"
+                  aria-label="Mostrar u ocultar contraseña"
+                >
+                  <i class="fa-regular fa-eye-slash" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+  
+            <div class="form-row form-row--end">
+              <a class="link" href="#">Forgot password?</a>
+            </div>
+  
+            <button class="btn btn--primary" type="submit">Sign In</button>
+          </form>
+  
+          <p class="form-footer">
+            Don't have an account?
+            <a class="link link--strong" href="#">Sign Up</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  
+  </body>
+  </html>
